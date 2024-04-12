@@ -33,8 +33,8 @@ const breadcrumbs = ref([
   <BaseBreadcrumb :title="page.title" :breadcrumbs="breadcrumbs"></BaseBreadcrumb>
   <v-row>
     <!---Sales overview--->
-    <v-col cols="12" sm="12" lg="8">
-      <TheSalesOverview />
+    <v-col cols="12" sm="12" lg="12">
+      <TheSalesOverview :total="50" />
     </v-col>
     <!---Our visiters--->
     <v-col cols="12" sm="12" lg="4">
