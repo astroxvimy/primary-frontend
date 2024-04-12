@@ -30,46 +30,11 @@ const breadcrumbs = ref([
 </script>
 
 <template>
-  <BaseBreadcrumb :title="page.title" :breadcrumbs="breadcrumbs"></BaseBreadcrumb>
   <v-row>
     <!---Sales overview--->
     <v-col cols="12" sm="12" lg="12">
       <TheSalesOverview :total="50" />
     </v-col>
     <!---Our visiters--->
-    <v-col cols="12" sm="12" lg="4">
-      <UiTittleSubtitleCard title="Our Visitors" subtitle="Different Devices Used to Visit">
-        <TotalSales />
-      </UiTittleSubtitleCard>
-    </v-col>
-    <!---Blog cards--->
-    <v-col cols="12" sm="12" lg="4">
-      <BlogCard />
-    </v-col>
-    <!---Newsletter Campaign--->
-    <v-col cols="12" sm="12" lg="8">
-      <NewsletterCampaign />
-    </v-col>
-    <!---Bandwidth usage--->
-    <v-col cols="12" sm="12" lg="4">
-      <TheBandwidthUsage />
-    </v-col>
-    <!---Download count--->
-    <v-col cols="12" sm="12" lg="4">
-      <TheDownloadCount />
-    </v-col>
-    <v-col cols="12" sm="12" lg="4">
-      <TheWeatherCard />
-    </v-col>
-    <!---Profile card /my contacts--->
-    <v-col cols="12" sm="12" lg="4">
-      <TheProfileCard />
-      <div class="mt-7"></div>
-      <TheMyContacts />
-    </v-col>
-    <!---Activity timeline tabs--->
-    <v-col cols="12" sm="12" lg="8">
-      <TheActivityTimeline />
-    </v-col>
   </v-row>
 </template>
